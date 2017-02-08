@@ -2,6 +2,7 @@ import React from 'react';
 import Data from './data';
 import Header from './header';
 
+require('../assets/sass/reset.scss');
 require('../assets/sass/index.scss');
 
 /**
@@ -22,6 +23,7 @@ let Index = React.createClass({
                 <section id="presentation">
                     <img src="../other/logo/fp-logo_second.jpg" id="logo" />
                     <p id="tagline">I am a developper, runner and performance addict</p>
+                    <button id="action" >who am I ?</button>
                 </section>
             </section>
         );
