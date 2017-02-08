@@ -25,6 +25,9 @@ let Index = React.createClass({
                     <p id="tagline">I am a developper, runner and performance addict</p>
                     <button id="action" >who am I ?</button>
                 </section>
+                <section id="what">
+                    <h1>What I do</h1>
+                </section>
             </section>
         );
     }

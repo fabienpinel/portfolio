@@ -6,6 +6,15 @@ $light-blue : #66fcf1;
 $presentation-height: 600px;
 $logo-width: 200px;
 
+@font-face {
+  font-family: futura;
+  src: url('../font/a_FuturaOrto-Bold_2258.ttf');
+}
+
+@font-face {
+  font-family: tablet;
+  src: url('../font/Tablet_Gothic_Narrow_Thin.ttf');
+}
 
 section#index{
 }
@@ -24,6 +33,16 @@ section#presentation{
   color: white;
   padding: 30px;
 }
+#what{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+h1{
+  font-family: futura;
+  font-size:3em;
+  width:100%;
+  text-align: center;
+}
 button{
   border: 2px solid $light-blue;
   letter-spacing: 3px;
@@ -37,6 +56,7 @@ button{
   -webkit-transition: all .4s;
   background: transparent;
   outline:none;
+  font-family: futura;
 }
 button:hover{
   background-color: $light-blue;
