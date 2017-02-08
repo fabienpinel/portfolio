@@ -1,4 +1,6 @@
 var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
     entry: [
         "./src/app.js"
@@ -17,10 +19,17 @@ module.exports = {
                 {
                     presets:['es2015','react']
                 }
+            },
+            {
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract('css!sass')
             }
         ]
     },
     plugins: [
+        new ExtractTextPlugin('style.css', {
+            allChunks: true
+        })
     ]
 
 };
