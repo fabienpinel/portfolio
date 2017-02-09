@@ -1,6 +1,9 @@
 import React from 'react';
+import { Row, Col } from 'react-materialize';
+
 import Data from './data';
 import Header from './header';
+import Footer from './footer';
 
 require('../assets/sass/reset.scss');
 require('../assets/sass/index.scss');
@@ -19,15 +22,66 @@ let Index = React.createClass({
     render() {
         return(
             <section id="index">
+
                 <Header/>
+
                 <section id="presentation">
                     <img src="../other/logo/fp-logo_second.jpg" id="logo" />
-                    <p id="tagline">I am a developper, runner and performance addict</p>
+                    <p id="tagline">{this.state.data.tagline}</p>
                     <button id="action" >who am I ?</button>
                 </section>
+
+                <section id="who">
+                    <Row className="double-div-row">
+                        <Col s={12} m={6} >
+                            photo
+                        </Col>
+                        <Col s={12} m={6} >
+                            <h1>{this.state.data.firstname}</h1>
+                            <h1>{this.state.data.lastname}</h1>
+                        </Col>
+                    </Row>
+
+                </section>
+
                 <section id="what">
                     <h1>What I do</h1>
+                    <section className="double-div">
+                        <Row className="double-div-row">
+                            <Col s={12} m={6} className="double-div-left">
+                            </Col>
+                            <Col s={12} m={6} className="double-div-right">
+                            </Col>
+                        </Row>
+                    </section>
                 </section>
+
+                <section id="motivations">
+                    <Row>
+                        <h1>My motivations</h1>
+
+                        <Col s={12} m={6}>
+                            <div className="quote">
+                                <p>
+                                    "Life begins at the end of your comfort zone."
+                                </p>
+                            </div>
+                        </Col>
+                        <Col s={12} m={6}>
+                            <p>
+                                content content content
+                            </p>
+                        </Col>
+                    </Row>
+                </section>
+
+                <section id="skills">
+                    <h1>My skills</h1>
+                    content content content
+                </section>
+
+                <Footer/>
+
             </section>
         );
     }

@@ -1,10 +1,13 @@
 // Colors
-$dark-blue : #12003c;
-$light-blue : #66fcf1;
+$dark-blue : #001844;
+$light-blue : #003669;
+$light-green : #66fcf1;
+$logo-color : #f45255;
 
 // Sizes
 $presentation-height: 600px;
 $logo-width: 200px;
+$double-div-height: 300px;
 
 @font-face {
   font-family: futura;
@@ -15,13 +18,19 @@ $logo-width: 200px;
   font-family: tablet;
   src: url('../font/Tablet_Gothic_Narrow_Thin.ttf');
 }
-
+body{
+  font-family: tablet;
+}
+section{
+  width:100%;
+}
 section#index{
 }
 section#presentation{
   background-color: $dark-blue;
   height: $presentation-height;
   text-align: center;
+  padding: 20px;
 }
 #logo{
   max-width:$logo-width;
@@ -32,20 +41,33 @@ section#presentation{
   font-style: italic;
   color: white;
   padding: 30px;
+  font-size: 1.4em;
 }
-#what{
-  padding-top: 20px;
-  padding-bottom: 20px;
+section#who{
+  padding: 20px;
+  width:100%;
+  background-color: $light-green;
+}
+#who h1{
+  font-size:7em;
+  text-align: right;
+  line-height:110px;
+  letter-spacing: -5px;
+
+}
+section#what{
+  padding: 20px;
 }
 h1{
   font-family: futura;
   font-size:3em;
   width:100%;
   text-align: center;
+  letter-spacing: -1px;
 }
 button{
-  border: 2px solid $light-blue;
-  letter-spacing: 3px;
+  border: 2px solid $light-green;
+  letter-spacing: 2px;
   color: white;
   font-size:16px;
   padding: 16px;
@@ -56,10 +78,44 @@ button{
   -webkit-transition: all .4s;
   background: transparent;
   outline:none;
-  font-family: futura;
+  font-family: tablet;
 }
 button:hover{
-  background-color: $light-blue;
+  background-color: $light-green;
   color: black;
   cursor: pointer;
+}
+
+.double-div{
+   padding:20px;
+}
+.double-div-row{
+  min-height: $double-div-height;
+}
+.double-div-right{
+  border: 5px solid $logo-color;
+}
+.double-div-left, .double-div-right{
+  height:$double-div-height;
+}
+section#motivations{
+  padding:20px;
+  background-color: $logo-color;
+  color: white;
+}
+section#skills{
+  padding:20px;
+  background-color: $light-blue;
+  color: white;
+}
+
+// Quotes
+.quote{
+  border-left: 2px solid lightgrey;
+  padding-left:15px;
+}
+.quote p{
+  font-size:3em;
+  font-style: italic;
+
 }
