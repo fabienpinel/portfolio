@@ -14,6 +14,7 @@ let Footer = React.createClass({
     render() {
         return(
             <section id="footer">
+                <h1>Footer</h1>
             </section>
 
         );

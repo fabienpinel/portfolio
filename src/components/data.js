@@ -11,7 +11,8 @@ let Data = React.createClass({
             mail:"fabien@fpinel.com",
             tagline:"I am a developper, runner and performance addict.",
             firstname: "Fabien",
-            lastname: "Pinel"
+            lastname: "Pinel",
+            favoriteQuote:"\"Life begins at the end of your comfort zone.\""
 
         }
     },

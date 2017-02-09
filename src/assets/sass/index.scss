@@ -19,7 +19,8 @@ $double-div-height: 300px;
   src: url('../font/Tablet_Gothic_Narrow_Thin.ttf');
 }
 body{
-  font-family: tablet;
+  font-family: tablet, Arial;
+  font-size: 1.5em;
 }
 section{
   width:100%;
@@ -41,7 +42,7 @@ section#presentation{
   font-style: italic;
   color: white;
   padding: 30px;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 section#who{
   padding: 20px;
@@ -49,7 +50,7 @@ section#who{
   background-color: $light-green;
 }
 #who h1{
-  font-size:7em;
+  font-size:4.5em;
   text-align: right;
   line-height:110px;
   letter-spacing: -5px;
@@ -60,7 +61,7 @@ section#what{
 }
 h1{
   font-family: futura;
-  font-size:3em;
+  font-size:2.6em;
   width:100%;
   text-align: center;
   letter-spacing: -1px;
@@ -115,7 +116,7 @@ section#skills{
   padding-left:15px;
 }
 .quote p{
-  font-size:3em;
+  font-size:2em;
   font-style: italic;
 
 }

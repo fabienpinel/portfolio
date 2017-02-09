@@ -49,6 +49,7 @@ let Index = React.createClass({
                     <section className="double-div">
                         <Row className="double-div-row">
                             <Col s={12} m={6} className="double-div-left">
+                                My projects
                             </Col>
                             <Col s={12} m={6} className="double-div-right">
                             </Col>
@@ -63,13 +64,13 @@ let Index = React.createClass({
                         <Col s={12} m={6}>
                             <div className="quote">
                                 <p>
-                                    "Life begins at the end of your comfort zone."
+                                    {this.state.data.favoriteQuote}
                                 </p>
                             </div>
                         </Col>
                         <Col s={12} m={6}>
                             <p>
-                                content content content
+                                I am driven by inspiring projects...
                             </p>
                         </Col>
                     </Row>
@@ -77,7 +78,7 @@ let Index = React.createClass({
 
                 <section id="skills">
                     <h1>My skills</h1>
-                    content content content
+                    content and graphs
                 </section>
 
                 <Footer/>
