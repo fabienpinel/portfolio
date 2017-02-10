@@ -34,7 +34,7 @@ let Index = React.createClass({
                 <section id="who">
                     <Row className="double-div-row">
                         <Col className="picture-container" s={12} m={6} >
-                            <img src="./src/assets/img/Fabien.jpg" id="profile"/>
+                            <img src="./src/assets/img/Fabien.JPG" id="profile"/>
                         </Col>
                         <Col s={12} m={6} className="section-padding">
                             <h1>{this.state.data.firstname}</h1>
