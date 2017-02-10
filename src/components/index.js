@@ -26,17 +26,17 @@ let Index = React.createClass({
                 <Header/>
 
                 <section id="presentation">
-                    <img src="../other/logo/fp-logo_second.jpg" id="logo" />
+                    <img src="./src/assets/img/fp-logo_second.jpg" id="logo" />
                     <p id="tagline">{this.state.data.tagline}</p>
-                    <button id="action" >who am I ?</button>
+                    <button id="action" >{this.state.data.actionButton}</button>
                 </section>
 
                 <section id="who">
                     <Row className="double-div-row">
-                        <Col s={12} m={6} >
-                            photo
+                        <Col className="picture-container" s={12} m={6} >
+                            <img src="./src/assets/img/Fabien.jpg" id="profile"/>
                         </Col>
-                        <Col s={12} m={6} >
+                        <Col s={12} m={6} className="section-padding">
                             <h1>{this.state.data.firstname}</h1>
                             <h1>{this.state.data.lastname}</h1>
                         </Col>

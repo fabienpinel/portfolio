@@ -45,7 +45,6 @@ section#presentation{
   font-size: 1em;
 }
 section#who{
-  padding: 20px;
   width:100%;
   background-color: $light-green;
 }
@@ -55,6 +54,9 @@ section#who{
   line-height:110px;
   letter-spacing: -5px;
 
+}
+div .col.section-padding{
+  padding: 20px;
 }
 section#what{
   padding: 20px;
@@ -90,7 +92,11 @@ button:hover{
 .double-div{
    padding:20px;
 }
-.double-div-row{
+section#who .double-div-row{
+  padding:0;
+}
+section#what .double-div-row{
+  padding:20px;
   min-height: $double-div-height;
 }
 .double-div-right{
@@ -118,5 +124,11 @@ section#skills{
 .quote p{
   font-size:2em;
   font-style: italic;
-
+}
+div .col.picture-container{
+  padding:0;
+}
+img#profile{
+  width:100%;
+  margin-bottom: -7px;
 }
