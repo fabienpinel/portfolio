@@ -9,6 +9,9 @@ $presentation-height: 600px;
 $logo-width: 200px;
 $double-div-height: 300px;
 
+//image url
+$profile-picture-url: "../img/Fabien.jpg";
+
 @font-face {
   font-family: futura;
   src: url('../font/a_FuturaOrto-Bold_2258.ttf');
@@ -134,6 +137,13 @@ section#skills{
 }
 div .col.picture-container{
   padding:0;
+  background-image: url($profile-picture-url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height:400px;
 }
 img#profile{
   width:100%;

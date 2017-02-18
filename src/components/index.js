@@ -4,6 +4,7 @@ import { Row, Col } from 'react-materialize';
 import Data from './data';
 import Header from './header';
 import Footer from './footer';
+import Skills from './skills';
 
 require('../assets/sass/reset.scss');
 require('../assets/sass/index.scss');
@@ -39,11 +40,18 @@ let Index = React.createClass({
                 <section id="who" className="section-content">
                     <Row className="double-div-row">
                         <Col className="picture-container" s={12} m={6} >
-                            <img src="./src/assets/img/Fabien.JPG" id="profile"/>
                         </Col>
                         <Col s={12} m={6} className="section-padding">
                             <h1>{this.state.data.firstname}</h1>
                             <h1>{this.state.data.lastname}</h1>
+                            <p>I work as a software engineer and do some motivative projects on the side.</p>
+                            <p>As a background: </p>
+                            <ul>
+                                <li>Polytech Nice Sophia - Engineering school</li>
+                                <li>European Innovation Academy - Summer entrepreneurship program</li>
+                                <li>Startup Week-End - 2 times attended (Lille and Nice) + 2 times organizer</li>
+                                <li>Coding Dojo organizer - Challenging coding events</li>
+                            </ul>
                         </Col>
                     </Row>
 
@@ -84,6 +92,7 @@ let Index = React.createClass({
                 <section id="skills" className="section-content">
                     <h1 className="title">My skills</h1>
                     Coming soon !
+                    <Skills/>
                 </section>
 
                 <Footer/>

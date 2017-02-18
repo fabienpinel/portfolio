@@ -26646,7 +26646,7 @@
 	                    _react2.default.createElement(
 	                        _reactMaterialize.Col,
 	                        { className: 'picture-container', s: 12, m: 6 },
-	                        _react2.default.createElement('img', { src: './src/assets/img/Fabien.JPG', id: 'profile' })
+	                        _react2.default.createElement('img', { src: './src/assets/img/Fabien.jpg', id: 'profile' })
 	                    ),
 	                    _react2.default.createElement(
 	                        _reactMaterialize.Col,
