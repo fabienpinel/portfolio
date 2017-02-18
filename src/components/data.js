@@ -13,7 +13,7 @@ let Data = React.createClass({
             firstname: "Fabien",
             lastname: "Pinel",
             favoriteQuote:"\"Life begins at the end of your comfort zone.\"",
-            actionButton: "Who am I ?"
+            actionButton: "Discover my ambitions"
         }
     },
     render() {

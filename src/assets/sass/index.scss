@@ -1,5 +1,5 @@
 // Colors
-$dark-blue : #001844;
+$dark-blue : #122435;
 $light-blue : #003669;
 $light-green : #66fcf1;
 $logo-color : #f45255;
@@ -25,17 +25,25 @@ body{
 section{
   width:100%;
 }
+section h1.title{
+  padding-bottom: 20px;
+}
+.section-content{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top:60px;
+  padding-bottom:60px;
+
+}
 section#index{
 }
 section#presentation{
   background-color: $dark-blue;
   height: $presentation-height;
   text-align: center;
-  padding: 20px;
 }
 #logo{
   max-width:$logo-width;
-  padding-top: 100px;
 }
 #tagline{
   font-family: Times, "Times New Roman", Arial;
@@ -47,6 +55,10 @@ section#presentation{
 section#who{
   width:100%;
   background-color: $light-green;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top:0px;
+  padding-bottom:0px;
 }
 #who h1{
   font-size:4.5em;
@@ -56,9 +68,6 @@ section#who{
 
 }
 div .col.section-padding{
-  padding: 20px;
-}
-section#what{
   padding: 20px;
 }
 h1{
@@ -106,12 +115,10 @@ section#what .double-div-row{
   height:$double-div-height;
 }
 section#motivations{
-  padding:20px;
   background-color: $logo-color;
   color: white;
 }
 section#skills{
-  padding:20px;
   background-color: $light-blue;
   color: white;
 }

@@ -19,19 +19,24 @@ let Index = React.createClass({
             data:data.state
         }
     },
+    scrollToWho: function(){
+        $('html, body').animate({
+            scrollTop: $("#who").offset().top
+        }, 800);
+    },
     render() {
         return(
             <section id="index">
 
                 <Header/>
 
-                <section id="presentation">
+                <section id="presentation" className="section-content">
                     <img src="./src/assets/img/fp-logo_second.jpg" id="logo" />
                     <p id="tagline">{this.state.data.tagline}</p>
-                    <button id="action" >{this.state.data.actionButton}</button>
+                    <button id="action" onClick={this.scrollToWho}>{this.state.data.actionButton}</button>
                 </section>
 
-                <section id="who">
+                <section id="who" className="section-content">
                     <Row className="double-div-row">
                         <Col className="picture-container" s={12} m={6} >
                             <img src="./src/assets/img/Fabien.JPG" id="profile"/>
@@ -44,12 +49,12 @@ let Index = React.createClass({
 
                 </section>
 
-                <section id="what">
-                    <h1>What I do</h1>
+                <section id="what" className="section-content">
+                    <h1 className="title">My projects</h1>
                     <section className="double-div">
                         <Row className="double-div-row">
                             <Col s={12} m={6} className="double-div-left">
-                                My projects
+                                Coming soon !
                             </Col>
                             <Col s={12} m={6} className="double-div-right">
                             </Col>
@@ -57,9 +62,9 @@ let Index = React.createClass({
                     </section>
                 </section>
 
-                <section id="motivations">
+                <section id="motivations" className="section-content">
                     <Row>
-                        <h1>My motivations</h1>
+                        <h1 className="title">My motivations</h1>
 
                         <Col s={12} m={6}>
                             <div className="quote">
@@ -76,9 +81,9 @@ let Index = React.createClass({
                     </Row>
                 </section>
 
-                <section id="skills">
-                    <h1>My skills</h1>
-                    content and graphs
+                <section id="skills" className="section-content">
+                    <h1 className="title">My skills</h1>
+                    Coming soon !
                 </section>
 
                 <Footer/>

@@ -14,7 +14,8 @@ let Footer = React.createClass({
     render() {
         return(
             <section id="footer">
-                <h1>Footer</h1>
+                <h1 className="title">Footer</h1>
+                Coming soon !
             </section>
 
         );
