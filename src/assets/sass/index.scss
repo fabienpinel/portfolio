@@ -142,18 +142,17 @@ section#skills{
 }
 div.col.picture-container{
   padding:0;
-  min-height:400px;
-
-  .picture{
-    background-image: url($profile-picture-url);
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-  }
+  max-height:700px;
 }
 
+.picture{
+  background: url($profile-picture-url) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
 img#profile{
   width:100%;
   margin-bottom: -7px;

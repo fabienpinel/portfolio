@@ -17,14 +17,25 @@ let data = new Data();
 let Index = React.createClass({
 
     getInitialState: function(){
+        window.addEventListener('resize', this.onResize);
         return {
             data:data.state
         }
+    },
+    componentDidMount: function() {
+        this.resizePicture();
     },
     scrollToWho: function(){
         $('html, body').animate({
             scrollTop: $("#who").offset().top
         }, 800);
+    },
+    onResize: function(){
+        console.log("resize");
+        this.resizePicture();
+    },
+    resizePicture: function(){
+        $('.picture-container').height($('#who').height());
     },
     render() {
         return(
@@ -35,7 +46,7 @@ let Index = React.createClass({
                 <section id="presentation" className="section-content">
 
                     <div className="parallax-logo">
-                        <ParallaxHover width='200' height='200' >
+                        <ParallaxHover width={200} height={200} >
                             <img ref='image' src="./src/assets/img/fp-logo_second.jpg" id="logo" />
                         </ParallaxHover>
                     </div>
@@ -45,10 +56,7 @@ let Index = React.createClass({
 
                 <section id="who" className="section-content">
                     <Row className="double-div-row">
-                        <div className="picture-container">
-                            <Col className="picture" s={12} m={6} >
-                            </Col>
-                        </div>
+                        <Col s={12} m={6} className="picture-container picture"></Col>
                         <Col s={12} m={6} className="section-padding">
                             <h1>{this.state.data.firstname}</h1>
                             <h1>{this.state.data.lastname}</h1>
