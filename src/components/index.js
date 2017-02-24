@@ -35,7 +35,7 @@ let Index = React.createClass({
         this.resizePicture();
     },
     resizePicture: function(){
-        $('.picture-container').height($('#who').height());
+        $('.picture-container').height($('#whoInfos').height());
     },
     render() {
         return(
@@ -57,17 +57,21 @@ let Index = React.createClass({
                 <section id="who" className="section-content">
                     <Row className="double-div-row">
                         <Col s={12} m={6} className="picture-container picture"></Col>
-                        <Col s={12} m={6} className="section-padding">
-                            <h1>{this.state.data.firstname}</h1>
-                            <h1>{this.state.data.lastname}</h1>
-                            <p>I work as a software engineer and do some motivative projects on the side.</p>
-                            <p>As a background: </p>
-                            <ul>
-                                <li>Polytech Nice Sophia - Engineering school</li>
-                                <li>European Innovation Academy - Summer entrepreneurship program</li>
-                                <li>Startup Week-End - 2 times attended (Lille and Nice) + 2 times organizer</li>
-                                <li>Coding Dojo organizer - Challenging coding events</li>
-                            </ul>
+                        <Col s={12} m={6} id="whoInfos">
+                            <div className="section-padding" >
+                                <h1>{this.state.data.firstname}</h1>
+                                <h1>{this.state.data.lastname}</h1>
+                                <p>I work as a software engineer and do some motivative projects on the side.</p>
+                                <p>As a background: </p>
+                                <ul>
+                                    <li>Polytech Nice Sophia - Engineering school</li>
+                                    <li>European Innovation Academy - Summer entrepreneurship program</li>
+                                    <li>Startup Week-End - 2 times attended (Lille and Nice) + 2 times organizer</li>
+                                    <li>Coding Dojo organizer - Challenging coding events</li>
+                                </ul>
+                                <br />
+                                <h3>Coming soon</h3>
+                            </div>
                         </Col>
                     </Row>
 
