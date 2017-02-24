@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-materialize';
+import ParallaxHover from 'react-parallax-hover';
 
 import Data from './data';
 import Header from './header';
@@ -32,15 +33,22 @@ let Index = React.createClass({
                 <Header/>
 
                 <section id="presentation" className="section-content">
-                    <img src="./src/assets/img/fp-logo_second.jpg" id="logo" />
+
+                    <div className="parallax-logo">
+                        <ParallaxHover width='200' height='200' >
+                            <img ref='image' src="./src/assets/img/fp-logo_second.jpg" id="logo" />
+                        </ParallaxHover>
+                    </div>
                     <p id="tagline">{this.state.data.tagline}</p>
                     <button id="action" onClick={this.scrollToWho}>{this.state.data.actionButton}</button>
                 </section>
 
                 <section id="who" className="section-content">
                     <Row className="double-div-row">
-                        <Col className="picture-container" s={12} m={6} >
-                        </Col>
+                        <div className="picture-container">
+                            <Col className="picture" s={12} m={6} >
+                            </Col>
+                        </div>
                         <Col s={12} m={6} className="section-padding">
                             <h1>{this.state.data.firstname}</h1>
                             <h1>{this.state.data.lastname}</h1>

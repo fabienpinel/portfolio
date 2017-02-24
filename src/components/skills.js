@@ -1,7 +1,6 @@
 import React from 'react';
-
 require('../assets/sass/skills.scss');
-let RadarChart = require('react-chartjs').Radar;
+import{Radar} from 'react-chartjs-2';
 
 
 /**
@@ -15,17 +14,16 @@ let Skills = React.createClass({
             datasets: [
                 {
                     label: "My First dataset",
-                    backgroundColor: "rgba(179,181,198,0.2)",
-                    borderColor: "rgba(179,181,198,1)",
-                    pointBackgroundColor: "rgba(179,181,198,1)",
-                    pointBorderColor: "#fff",
-                    pointHoverBackgroundColor: "#fff",
+                    backgroundColor: "rgba(179,181,198,0.4)",
+                    borderColor: "rgba(179,181,198,0.8)",
+                    pointBackgroundColor: "white",
+                    pointBorderColor: "#000",
+                    pointHoverBackgroundColor: "#000",
                     pointHoverBorderColor: "rgba(179,181,198,1)",
                     data: [65, 59, 90, 81, 56, 55, 40]
                 }
             ]
         };
-
 
         return {
             data: data,
@@ -43,7 +41,7 @@ let Skills = React.createClass({
 
         return(
             <section id="skills">
-                <RadarChart data={this.state.data} options={this.state.chartOptions} width="600" height="250" redraw />
+                <Radar data={this.state.data} options={this.state.chartOptions} width={600} height={250} redraw />
             </section>
 
         );

@@ -48,6 +48,11 @@ section#presentation{
 #logo{
   max-width:$logo-width;
 }
+.parallax-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #tagline{
   font-family: Times, "Times New Roman", Arial;
   font-style: italic;
@@ -135,16 +140,20 @@ section#skills{
   font-size:2em;
   font-style: italic;
 }
-div .col.picture-container{
+div.col.picture-container{
   padding:0;
-  background-image: url($profile-picture-url);
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   min-height:400px;
+
+  .picture{
+    background-image: url($profile-picture-url);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
 }
+
 img#profile{
   width:100%;
   margin-bottom: -7px;
