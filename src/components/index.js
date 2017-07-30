@@ -21,10 +21,12 @@ class Index extends React.Component {
 
     constructor() {
         super();
-        window.addEventListener('resize', this.onResize);
-       this.state ={
+        this.state ={
             data: data.state
         };
+        this.resizePicture = this.resizePicture.bind(this);
+        window.addEventListener('resize', this.resizePicture);
+
     }
 
     componentDidMount() {
@@ -49,10 +51,6 @@ class Index extends React.Component {
         $('html, body').animate({
             scrollTop: $("#who").offset().top
         }, 800);
-    }
-
-    onResize() {
-        this.resizePicture();
     }
 
     resizePicture() {

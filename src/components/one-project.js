@@ -7,12 +7,27 @@ require('../assets/sass/one-project.scss');
  */
 class OneProject extends React.Component{
 
-    constructor(){
-        super();
+    //noinspection JSAnnotator
+    title: string;
+
+    constructor(props){
+        console.log("Oneproject props",props);
+        super(props);
     }
     render() {
         return(
-            <section class="one-project-section">
+            <section
+                className="one-project-section"
+                id={this.props.id}
+            >
+                <div className="one-project-div">
+                    <div className="one-project-image-div">
+                        <img ref='image'
+                             src={this.props.image}
+                             className="one-project-image"
+                        />
+                    </div>
+                </div>
             </section>
 
         );
