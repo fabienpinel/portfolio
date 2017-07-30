@@ -11,7 +11,7 @@ import Index from './components/index.js';
 /**
  * First App component (to be moved in a separate page)
  */
-const App = React.createClass({
+class App extends React.Component{
     render() {
         return (
             <section id="app">
@@ -21,7 +21,7 @@ const App = React.createClass({
             </section>
         )
     }
-});
+}
 
 
 /**

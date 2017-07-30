@@ -7,6 +7,7 @@ import Data from './data';
 import Header from './header';
 import Footer from './footer';
 import Skills from './skills';
+import Projects from './projects';
 
 require('../assets/sass/reset.scss');
 require('../assets/sass/index.scss');
@@ -107,16 +108,8 @@ class Index extends React.Component {
                 </section>
 
                 <section id="what" className="section-content">
-                    <h1 className="title">My projects</h1>
-                    <section className="double-div">
-                        <Row className="double-div-row">
-                            <Col s={12} m={6} className="double-div-left">
-                                Coming soon !
-                            </Col>
-                            <Col s={12} m={6} className="double-div-right">
-                            </Col>
-                        </Row>
-                    </section>
+                    <h1 className="title">My work</h1>
+                    <Projects />
                 </section>
 
                 <section id="motivations" className="section-content">
