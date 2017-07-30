@@ -8,6 +8,7 @@ Hi, This is the code of my portfolio !
 - ChartJS : http://www.chartjs.org/docs/#radar-chart
 - React ChartJS - https://github.com/reactjs/react-chartjs
 - Parallax Hover (for logo) - https://www.npmjs.com/package/react-parallax-hover
+- Typed.js (for tagline) - http://www.mattboldt.com/typed.js/
 #Install :
 nodejs has to be installed for npm use
 

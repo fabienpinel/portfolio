@@ -21,6 +21,39 @@ $profile-picture-url: "../img/Fabien.jpg";
   font-family: tablet;
   src: url('../font/Tablet_Gothic_Narrow_Thin.ttf');
 }
+
+$mobile-width: 600px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+.no-paddings{
+  padding:0 !important;
+  margin:0 !important;
+}
+hr{
+  padding:0;
+  margin: 0;
+  border:none;
+  border-top:1px solid black;
+}
+
 body{
   font-family: tablet, Arial;
   font-size: 1.5em;
@@ -53,12 +86,13 @@ section#presentation{
   justify-content: center;
   align-items: center;
 }
-#tagline{
+.tagline{
   font-family: Times, "Times New Roman", Arial;
   font-style: italic;
   color: white;
   padding: 30px;
   font-size: 1em;
+  height:90px;
 }
 section#who{
   width:100%;
@@ -69,10 +103,18 @@ section#who{
   padding-bottom:0px;
 }
 #who h1{
-  font-size:4.5em;
+  font-size:3em;
   text-align: right;
-  line-height:110px;
   letter-spacing: -5px;
+
+  @include tablet{
+    font-size:4.5em;
+  }
+
+  @include desktop {
+    line-height:110px;
+    font-size:4.5em;
+  }
 
 }
 div.section-padding{
@@ -130,7 +172,29 @@ section#skills{
   background-color: $light-blue;
   color: white;
 }
+h5.role{
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: right;
+  padding-top:12px;
+  padding-bottom:12px;
+}
+p.profile-description{
+  padding-top: 12px;
+  padding-bottom:20px;
+  text-align: right;
+  font-size:0.8em;
+}
+.profile-description-line{
+  background: #112437;
+  height: 5px;
+  margin-top: 1.3rem;
 
+  @include mobile {
+    display: none;
+  }
+}
 // Quotes
 .quote{
   border-left: 2px solid lightgrey;

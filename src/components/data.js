@@ -10,8 +10,8 @@ let Data = React.createClass({
         return {
             mail:"fabien@fpinel.com",
             tagline:"I am a developper, runner and performance addict.",
-            firstname: "Xxxxxx",
-            lastname: "Xxxxx",
+            firstname: "Fabien",
+            lastname: "Pinel",
             favoriteQuote:"\"Life begins at the end of your comfort zone.\"",
             actionButton: "Discover my ambitions"
         }
