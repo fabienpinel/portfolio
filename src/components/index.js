@@ -16,15 +16,17 @@ require('../assets/sass/index.scss');
  */
 let data = new Data();
 let typed;
-let Index = React.createClass({
+class Index extends React.Component {
 
-    getInitialState: function(){
+    constructor() {
+        super();
         window.addEventListener('resize', this.onResize);
-        return {
-            data:data.state
-        }
-    },
-    componentDidMount: function() {
+       this.state ={
+            data: data.state
+        };
+    }
+
+    componentDidMount() {
         let options = {
             strings: ["runner", "developer", "performance addict", "in love with code"],
             startDelay: 100,
@@ -36,23 +38,28 @@ let Index = React.createClass({
         };
         typed = new Typed("#tagline", options);
         this.resizePicture();
-    },
-    componentDidUpdate: function(){
+    }
 
-    },
-    scrollToWho: function(){
+    componentDidUpdate() {
+
+    }
+
+    scrollToWho() {
         $('html, body').animate({
             scrollTop: $("#who").offset().top
         }, 800);
-    },
-    onResize: function(){
+    }
+
+    onResize() {
         this.resizePicture();
-    },
-    resizePicture: function(){
+    }
+
+    resizePicture() {
         $('.picture-container').height($('#whoInfos').height());
-    },
+    }
+
     render() {
-        return(
+        return (
             <section id="index">
 
                 <Header/>
@@ -60,8 +67,8 @@ let Index = React.createClass({
                 <section id="presentation" className="section-content">
 
                     <div className="parallax-logo">
-                        <ParallaxHover width={200} height={200} >
-                            <img ref='image' src="./src/assets/img/fp-logo_second.jpg" id="logo" />
+                        <ParallaxHover width={200} height={200}>
+                            <img ref='image' src="./src/assets/img/fp-logo_second.jpg" id="logo"/>
                         </ParallaxHover>
                     </div>
                     <p className="tagline"><span id="tagline"> </span></p>
@@ -71,7 +78,7 @@ let Index = React.createClass({
                 <section id="who" className="section-content">
                     <Row className="double-div-row">
                         <Col s={12} m={6} id="whoInfos">
-                            <div className="section-padding" >
+                            <div className="section-padding">
                                 <h1>{this.state.data.firstname}</h1>
                                 <h1>{this.state.data.lastname}</h1>
                                 <h5 className="role">SOFTWARE ENGINEER @AMADEUS <br/> AND FREELANCE DEVELOPER</h5>
@@ -82,9 +89,12 @@ let Index = React.createClass({
                                     <Col s={12} m={10} className="no-paddings">
                                         <p className="profile-description">
                                             I am a front-end developer specialized in UI and UX development.
-                                            I am driven by inspiring projects and I love working for innovative solutions with disruptive designs.
-                                            I am 300% passionate about what I do and I always try to push myself to the edge of my knowledge.
-                                            I deeply believe that going out of our comfort zone must be an everyday moto.
+                                            I am driven by inspiring projects and I love working for innovative
+                                            solutions with disruptive designs.
+                                            I am 300% passionate about what I do and I always try to push myself to the
+                                            edge of my knowledge.
+                                            I deeply believe that going out of our comfort zone must be an everyday
+                                            moto.
                                         </p>
                                     </Col>
                                 </div>
@@ -139,5 +149,6 @@ let Index = React.createClass({
             </section>
         );
     }
-});
+}
+
 export default Index;

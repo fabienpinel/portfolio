@@ -5,12 +5,11 @@ require('../assets/sass/footer.scss');
 /**
  * Footer component
  */
-let Footer = React.createClass({
+class Footer extends React.Component{
 
-    getInitialState: function(){
-        return {
-        }
-    },
+    constructor(){
+        super();
+    }
     render() {
         return(
             <section id="footer">
@@ -20,5 +19,5 @@ let Footer = React.createClass({
 
         );
     }
-});
+}
 export default Footer;

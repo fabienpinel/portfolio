@@ -5,12 +5,11 @@ require('../assets/sass/header.scss');
 /**
  * Header component
  */
-let Header = React.createClass({
+class Header extends React.Component{
 
-    getInitialState: function(){
-        return {
-        }
-    },
+    constructor(){
+       super();
+    }
     render() {
         return(
             <section id="header">
@@ -18,5 +17,5 @@ let Header = React.createClass({
 
         );
     }
-});
+}
 export default Header;

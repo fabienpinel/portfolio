@@ -6,9 +6,10 @@ import{Radar} from 'react-chartjs-2';
 /**
  * Skills component
  */
-let Skills = React.createClass({
+class Skills extends React.Component{
 
-    getInitialState: function(){
+    constructor(){
+        super();
         let data = {
             labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
             datasets: [
@@ -25,18 +26,18 @@ let Skills = React.createClass({
             ]
         };
 
-        return {
+        this.state = {
             data: data,
             chartOptions: {
             scale: {
                 reverse: true,
                     ticks: {
                     beginAtZero: true
+                    }
                 }
             }
-        }
-        }
-    },
+        };
+    }
     render() {
 
         return(
@@ -46,5 +47,5 @@ let Skills = React.createClass({
 
         );
     }
-});
+}
 export default Skills;
