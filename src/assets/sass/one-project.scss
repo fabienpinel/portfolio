@@ -3,12 +3,20 @@ $one-project-width: 600px;
 
 
 .one-project-section{
-  width:100%;
-  background: white;
+  margin:0;
+  padding:0;
+  display: inline-block;
+  text-align: center;
+  width:auto;
+  height:auto;
+  font-size:0;
+  padding-left:4px;
+  padding-right:4px;
+
 }
 .one-project-div{
-  width:$one-project-width;
-  height:$one-project-height;
+  width:100%;
+  height:auto;
   cursor: pointer;
   overflow: hidden;
 }
@@ -22,10 +30,11 @@ $one-project-width: 600px;
   width:auto;
   height:auto;
   background-color: black;
+  font-size:0;
 }
 img.one-project-image{
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   width:100%;
-  height:$one-project-height;
+  height:auto;
 }

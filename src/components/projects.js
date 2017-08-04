@@ -31,6 +31,8 @@ class Projects extends React.Component{
             ]
         };
     }
+
+
     render() {
         return(
             <section className="projects-section">
@@ -42,10 +44,11 @@ class Projects extends React.Component{
                         <Col s={12} m={6} className="double-div-right">
                         </Col>
 
-                        <Col s={12}>
+                        <Col s={12} className={'center paddings-top-bottom black-background width100'}>
                             {this.state.projects.map(function(project, index){
                                 return <OneProject
                                     id={"one-project-"+index}
+                                    key={"one-project-"+index}
                                     title={project.title}
                                     image={project.image}
                                 /> ;

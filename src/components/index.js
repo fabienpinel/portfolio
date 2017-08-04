@@ -24,8 +24,8 @@ class Index extends React.Component {
         this.state ={
             data: data.state
         };
-        this.resizePicture = this.resizePicture.bind(this);
-        window.addEventListener('resize', this.resizePicture);
+        this.onResize = this.onResize.bind(this);
+        window.addEventListener('resize', this.onResize);
 
     }
 
@@ -40,7 +40,7 @@ class Index extends React.Component {
             loop: true
         };
         typed = new Typed("#tagline", options);
-        this.resizePicture();
+        this.onResize();
     }
 
     componentDidUpdate() {
@@ -53,8 +53,9 @@ class Index extends React.Component {
         }, 800);
     }
 
-    resizePicture() {
+    onResize() {
         $('.picture-container').height($('#whoInfos').height());
+        $('.width100').width($('body').width());
     }
 
     render() {

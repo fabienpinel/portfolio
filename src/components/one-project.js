@@ -11,21 +11,18 @@ class OneProject extends React.Component{
     title: string;
 
     constructor(props){
-        console.log("Oneproject props",props);
         super(props);
     }
     render() {
         return(
             <section
                 className="one-project-section"
-                id={this.props.id}
-            >
+                id={this.props.id}>
                 <div className="one-project-div">
                     <div className="one-project-image-div">
                         <img ref='image'
                              src={this.props.image}
-                             className="one-project-image"
-                        />
+                             className="one-project-image"/>
                     </div>
                 </div>
             </section>
