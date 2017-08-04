@@ -26,6 +26,10 @@ $one-project-width: 600px;
   -ms-transform: scale(1.2);
   opacity: 0.5;
 }
+.one-project-div:hover .project-title{
+  font-size:45px;
+}
+
 .one-project-image-div{
   width:auto;
   height:auto;
@@ -37,4 +41,17 @@ img.one-project-image{
   transition: all .2s ease-in-out;
   width:100%;
   height:auto;
+}
+.project-title-container{
+  position: absolute;
+  display: table;
+  line-height:30px;
+  height:$one-project-height;
+  width:$one-project-width;
+}
+.project-title{
+  color: white;
+  font-size:30px;
+  vertical-align: middle;
+  display: table-cell;
 }

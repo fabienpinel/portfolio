@@ -19,6 +19,9 @@ class OneProject extends React.Component{
                 className="one-project-section"
                 id={this.props.id}>
                 <div className="one-project-div">
+                    <div className="project-title-container">
+                        <h1 className="project-title">{this.props.title}</h1>
+                    </div>
                     <div className="one-project-image-div">
                         <img ref='image'
                              src={this.props.image}
