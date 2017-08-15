@@ -47,6 +47,9 @@ $desktop-width: 1024px;
   padding:0 !important;
   margin:0 !important;
 }
+.align-right{
+  text-align: right;
+}
 hr{
   padding:0;
   margin: 0;
@@ -158,9 +161,6 @@ section#what .double-div-row{
   padding:20px;
   min-height: $double-div-height;
 }
-.double-div-right{
-  border: 5px solid $logo-color;
-}
 .double-div-left, .double-div-right{
   height:$double-div-height;
 }
@@ -196,13 +196,20 @@ p.profile-description{
   }
 }
 // Quotes
-.quote{
+.quote {
   border-left: 2px solid lightgrey;
-  padding-left:15px;
-}
-.quote p{
-  font-size:2em;
-  font-style: italic;
+  padding-left: 15px;
+  p {
+    font-size: 2em;
+    font-style: italic;
+  }
+  span.signature{
+    text-align: right;
+    font-size:0.7em;
+    display: block;
+    font-style: normal;
+    
+  }
 }
 div.col.picture-container{
   padding:0;

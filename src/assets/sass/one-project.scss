@@ -24,7 +24,7 @@ $one-project-width: 600px;
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .one-project-div:hover .project-title{
   font-size:40px;
@@ -56,4 +56,7 @@ img.one-project-image{
   font-size:30px;
   vertical-align: middle;
   display: table-cell;
+}
+.project-description-text{
+  text-align: justify;
 }

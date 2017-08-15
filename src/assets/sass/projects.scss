@@ -1,3 +1,9 @@
+// Colors
+$dark-blue : #122435;
+$light-blue : #003669;
+$light-green : #66fcf1;
+$logo-color : #f45255;
+
 .projects-section{
 
 }
@@ -9,4 +15,17 @@
   padding:0 !important;
   padding-top: 20px !important;
   padding-bottom: 20px !important;
+}
+.double-div-right{
+  border: 5px solid $logo-color;
+  display: table;
+}
+
+.double-div-right .quote{
+  color: $logo-color;
+  border:none;
+  vertical-align: middle;
+  display: table-cell;
+  margin:auto;
+  font-size: 0.8em;
 }

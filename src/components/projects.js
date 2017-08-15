@@ -17,16 +17,24 @@ class Projects extends React.Component{
             projects: [
                 {
                     title: 'Souliers & Compagnie',
-                    image: 'src/assets/img/projects/sc.png'
+                    featuredPicture: 'src/assets/img/projects/sc.png',
+                    images: [],
+                    description: 'Souliers & Compagnie is a shoe retailer company'
                 }, {
                     title: 'Champagne Grand Conclave',
-                    image: 'src/assets/img/projects/cgc.png'
+                    featuredPicture: 'src/assets/img/projects/cgc.png',
+                    images: [],
+                    description: 'Explain what is the company, what s the goal of the website, how did I developed and which technologies'
                 }, {
                     title: 'Technews.fr',
-                    image: 'src/assets/img/projects/technews.png'
+                    featuredPicture: 'src/assets/img/projects/technews.png',
+                    images: [],
+                    description: ''
                 }, {
                     title: 'Sphero battle',
-                    image: 'src/assets/img/projects/sphero.jpg'
+                    featuredPicture: 'src/assets/img/projects/sphero.jpg',
+                    images: [],
+                    description: 'School project etc.'
                 },
             ]
         };
@@ -42,15 +50,23 @@ class Projects extends React.Component{
                             Coming soon !
                         </Col>
                         <Col s={12} m={6} className="double-div-right">
+                            <div className="quote">
+                                <p>"You've got to get up every morning with determination if you're going to go to bed with satisfaction."
+                                    <br/><span className="signature">George Lorimer</span>
+                                </p>
+                            </div>
                         </Col>
-
+                    </Row>
+                    <Row>
                         <Col s={12} className={'center paddings-top-bottom black-background width100'}>
                             {this.state.projects.map(function(project, index){
                                 return <OneProject
                                     id={"one-project-"+index}
                                     key={"one-project-"+index}
                                     title={project.title}
-                                    image={project.image}
+                                    description={project.description}
+                                    featuredPicture={project.featuredPicture}
+                                    images={project.images}
                                 /> ;
                             })}
 
