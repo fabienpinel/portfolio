@@ -23,6 +23,7 @@ class OneProject extends React.Component{
 
                 <Modal
                     header={this.props.title}
+                    fixedFooter
                     trigger={
                         <div className="one-project-div">
                             <div className="project-title-container">
@@ -35,6 +36,11 @@ class OneProject extends React.Component{
                             </div>
                         </div>
                     }>
+                    <br />
+                    <hr />
+                    <img ref='image'
+                         src={this.props.featuredPicture}
+                         className="one-project-image"/>
                     <p>{this.props.description}</p>
                 </Modal>
 

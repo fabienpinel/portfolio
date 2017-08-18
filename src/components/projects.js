@@ -29,17 +29,21 @@ class Projects extends React.Component{
                     title: 'Technews.fr',
                     featuredPicture: 'src/assets/img/projects/technews.png',
                     images: [],
-                    description: ''
+                    description: 'The best way to make sure you understand something, is to explain it simply. The reason why I created Technews.fr in 2012 was to share my passion for new technologies & innovation while making sure I was up to date with creations of the sector. ' +
+                    'My curiosity pushed me to start testing high-tech products and write tutorials in order to make it easier for my readers to use/take on new technologies, removing a cognitive barrier. From flash news, event communications, tutorials and detailed reviews of products, ' +
+                    'Technews.fr allows me to express my love for new technologies in a useful manner. '
                 }, {
                     title: 'Sphero battle',
                     featuredPicture: 'src/assets/img/projects/sphero.jpg',
                     images: [],
-                    description: 'School project etc.'
+                    description: 'Sphero Battle is a duelling game. Two players are confronted in a combat with no mercy. Each player controls his/her robot Sphero using a MYO bracelet. The goal is to survive the duel with a maximum of hits. When hit, a player loses a percentage of his life. ' +
+                    'The public can vote for players to help give them more power and allow them to surpass their capabilities during a short period of time (the opponent’s movement is slowed down, the commands are reversed, immunity is provided and even bonus life). ' +
+                    'Star Wars is virtual, while ours is pretty real. Play Sphero Battle and the force will be with you. ' +
+                    'Project created during a computer science major at Polytech Nice Sophia'
                 },
             ]
         };
     }
-
 
     render() {
         return(

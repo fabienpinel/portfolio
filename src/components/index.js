@@ -67,7 +67,7 @@ class Index extends React.Component {
 
                 <section id="presentation" className="section-content">
 
-                    <div className="parallax-logo">
+                    <div className="parallax-logo animated pulse">
                         <ParallaxHover width={200} height={200}>
                             <img ref='image' src="./src/assets/img/fp-logo_second.jpg" id="logo"/>
                         </ParallaxHover>
