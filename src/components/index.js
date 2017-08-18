@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-materialize';
+import 'materialize-css';
 import ParallaxHover from 'react-parallax-hover';
 import Typed from 'typed.js';
 
@@ -132,7 +133,6 @@ class Index extends React.Component {
 
                 <section id="skills" className="section-content">
                     <h1 className="title">My skills</h1>
-                    Coming soon !
                     <Skills/>
                 </section>
 

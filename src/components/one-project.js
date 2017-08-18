@@ -1,4 +1,5 @@
 import React from 'react';
+import { Modal} from 'react-materialize';
 
 require('../assets/sass/one-project.scss');
 
@@ -14,53 +15,30 @@ class OneProject extends React.Component{
         super(props);
     }
 
-    openProjectFullDescription(event){
-        console.log("openning project full description", event);
-        //console.log("openning project full description", this.props);
-        this.openWarningModal();
-    }
-
-    openWarningModal(){
-        $('#warningModal').modal({
-            backdrop: 'static',
-            keyboard: false
-        }, 'show');
-    }
-
     render() {
         return(
             <section
                 className="one-project-section"
-                id={this.props.id}
-                onClick={this.openWarningModal}>
-                <div className="one-project-div">
-                    <div className="project-title-container">
-                        <h1 className="project-title">{this.props.title}</h1>
-                    </div>
-                    <div className="one-project-image-div">
-                        <img ref='image'
-                             src={this.props.featuredPicture}
-                             className="one-project-image"/>
-                    </div>
-                </div>
+                id={this.props.id}>
 
-                <div className="modal fade"
-                     id="projectDescriptionModal"
-                     tabIndex="-1" role="dialog"
-                     aria-labelledby="projectDescriptionModal">
-                    <div className="modal-dialog" role="document">
-                        <div className="modal-content">
-                            <div className="modal-body">
-                                <p className="project-description-text">{this.props.description}</p>
+                <Modal
+                    header={this.props.title}
+                    trigger={
+                        <div className="one-project-div">
+                            <div className="project-title-container">
+                                <h1 className="project-title">{this.props.title}</h1>
                             </div>
-                            <div className="modal-footer">
-                                <button type="button">Close</button>
+                            <div className="one-project-image-div">
+                                <img ref='image'
+                                     src={this.props.featuredPicture}
+                                     className="one-project-image"/>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    }>
+                    <p>{this.props.description}</p>
+                </Modal>
 
-    </section>
+            </section>
 
         );
     }

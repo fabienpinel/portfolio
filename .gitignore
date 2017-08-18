@@ -4,3 +4,4 @@ build/
 node_modules/
 bundle.js
 style.css
+npm-debug.log

@@ -5,5 +5,22 @@ section#footer{
   padding:20px;
 }
 #footer h1{
-  text-align: left;
+}
+.switch {
+
+  text-align: center;
+
+  label{
+    font-size:1em;
+    color: white;
+  }
+  .lever{
+    &:after
+    {
+      background-color: #26a69a !important;
+    }
+  }
+}
+.contact-div{
+  text-align: center;
 }

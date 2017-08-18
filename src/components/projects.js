@@ -47,7 +47,15 @@ class Projects extends React.Component{
                 <section className="double-div">
                     <Row className="double-div-row">
                         <Col s={12} m={6} className="double-div-left">
-                            Coming soon !
+                            <Row className="paddings">
+                                <p>
+                                    What I search in every project is a great relationship with the client.
+                                    I think this is very important in order to work well together and provide each other the best we can.
+                                </p>
+                                <p>
+                                    I love searching for new UX principle and implement great looking UI with easy interactions.
+                                </p>
+                            </Row>
                         </Col>
                         <Col s={12} m={6} className="double-div-right">
                             <div className="quote">
