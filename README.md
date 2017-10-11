@@ -9,6 +9,7 @@ Hi, This is the code of my portfolio !
 - React ChartJS - https://github.com/reactjs/react-chartjs
 - Parallax Hover (for logo) - https://www.npmjs.com/package/react-parallax-hover
 - Typed.js (for tagline) - http://www.mattboldt.com/typed.js/
+- AnimateCSS for small animations - https://daneden.github.io/animate.css/
 #Install :
 nodejs has to be installed for npm use
 

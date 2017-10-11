@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-materialize';
+import {Row, Col, Modal} from 'react-materialize';
 require('../assets/sass/skills.scss');
 import{Radar} from 'react-chartjs-2';
 
@@ -7,9 +7,9 @@ import{Radar} from 'react-chartjs-2';
 /**
  * Skills component
  */
-class Skills extends React.Component{
+class Skills extends React.Component {
 
-    constructor(){
+    constructor() {
         super();
         let data = {
             labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
@@ -41,9 +41,10 @@ class Skills extends React.Component{
             }
         };
     }
+
     render() {
 
-        return(
+        return (
             <section id="skills">
                 <Row className="skills-set">
                     <Col s={6} m={3} l={2} offset="l1 m3">
@@ -78,20 +79,68 @@ class Skills extends React.Component{
                     <Col s={12} m={6} l={4} offset="m3">
                         <h3>Miscellaneous</h3>
                         <ul className="skill-list padding-bottom">
-                            <li>Coding Dojo organizer (agile programming excercices)</li>
-                            <li>External facilitator for student project</li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                   onClick={() => {
+                                       $('#codingDojoModal').modal('open')
+                                   }}>
+                                    Coding Dojo organizer (agile programming excercices)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"
+                                   onClick={() => {
+                                       $('#facilitatorModal').modal('open')
+                                   }}>External facilitator for student project
+                                </a>
+                            </li>
                             <li>Startup Weekend organizer (2 years) and participant several times</li>
-                            <li>Hightech influencer</li>
-                            <li>Community manager</li>
+                            <li>Hightech influencer (<a href="http://technews.fr" target="_blanck">Technews.fr</a>)</li>
+                            <li>Community manager (<a href="http://soulierscompagnie.fr" target="_blanck">Souliers & Compagnie</a>)</li>
                             <li>Video recording and editing amateur ( Checkout
-                                 <spans>
-                                     <a href="https://www.youtube.com/channel/UCwUX9oENen7p63zGdKUu5Hg/videos" target="_blanck"> Startup Weekend Nice youtube channel</a>
-                                 </spans> )
+                                <span>
+                                    <a href="https://www.youtube.com/channel/UCwUX9oENen7p63zGdKUu5Hg/videos"
+                                       target="_blanck"> Startup Weekend Nice youtube channel</a>
+                                </span>
+                                )
                             </li>
                             <li></li>
                         </ul>
                     </Col>
                 </Row>
+                <Modal
+                    header="Coding Dojo organizer (agile programming excercices)"
+                    fixedFooter
+                    id="codingDojoModal">
+                    <br />
+                    <h2>Photos</h2>
+                    <img
+                        className="width100"
+                        src="../src/assets/img/codingdojos/coding-dojo-polytech1.jpg"/>
+                    <img
+                        className="width100"
+                        src="../src/assets/img/codingdojos/coding-dojo-polytech2.jpg"/>
+                    <img
+                        className="width100"
+                        src="../src/assets/img/codingdojos/coding-dojo-polytech3.jpg"/>
+                    <h2>Videos</h2>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/0Jh7qsgcUDA" frameborder="0"
+                            allowfullscreen></iframe>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/9tcf7VuDc1Q" frameborder="0"
+                            allowfullscreen></iframe>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YDEIjAgxBrI" frameborder="0"
+                            allowfullscreen></iframe>
+                </Modal>
+                <Modal
+                    header="External facilitator for student project"
+                    fixedFooter
+                    id="facilitatorModal">
+                    <br />
+                    <h2>Photo</h2>
+                    <img
+                        className="width100"
+                        src="../src/assets/img/projects.jpg"/>
+                </Modal>
             </section>
 
         );

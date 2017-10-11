@@ -125,8 +125,14 @@ class Index extends React.Component {
                         </Col>
                         <Col s={12} m={6}>
                             <p>
-                                I am driven by inspiring projects...
+                                I'm always curious about learning new things. That's why:
                             </p>
+                            <ul>
+                                <li> - I order more books than I read</li>
+                                <li> - I listen to various podcasts to learn new things every day.</li>
+                                <li> - I'm interested in personal development, minimalism, how to consume less plastic (and consume less in general), travelling by van.</li>
+                                <li> - I like to learn how to work differently and how to change step by step the way we work (agility, remote jobs etc.)</li>
+                            </ul>
                         </Col>
                     </Row>
                 </section>
