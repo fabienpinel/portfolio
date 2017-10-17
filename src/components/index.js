@@ -32,7 +32,7 @@ class Index extends React.Component {
 
     componentDidMount() {
         let options = {
-            strings: ["runner", "developer", "performance addict", "in love with code"],
+            strings: ["runner", "developer", "performance addict", "in love with code", "old bike fan"],
             startDelay: 100,
             showCursor: false,
             typeSpeed: 20,
@@ -107,7 +107,7 @@ class Index extends React.Component {
 
                 </section>
 
-                <section id="what" className="section-content">
+                <section id="what">
                     <h1 className="title">My work</h1>
                     <Projects />
                 </section>

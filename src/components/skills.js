@@ -124,12 +124,12 @@ class Skills extends React.Component {
                         className="width100"
                         src="../src/assets/img/codingdojos/coding-dojo-polytech3.jpg"/>
                     <h2>Videos</h2>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/0Jh7qsgcUDA" frameborder="0"
-                            allowfullscreen></iframe>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/9tcf7VuDc1Q" frameborder="0"
-                            allowfullscreen></iframe>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YDEIjAgxBrI" frameborder="0"
-                            allowfullscreen></iframe>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/0Jh7qsgcUDA" frameBorder="0"
+                            allowFullScreen></iframe>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/9tcf7VuDc1Q" frameBorder="0"
+                            allowFullScreen></iframe>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YDEIjAgxBrI" frameBorder="0"
+                            allowFullScreen></iframe>
                 </Modal>
                 <Modal
                     header="External facilitator for student project"

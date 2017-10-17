@@ -41,7 +41,16 @@ class OneProject extends React.Component{
                     <img ref='image'
                          src={this.props.featuredPicture}
                          className="one-project-image"/>
-                    <p>{this.props.description}</p>
+                    <p className="project-content-text">{this.props.description}</p>
+                    <div>
+                        {this.props.images.map(function(image, index){
+                            return <img
+                                id={"one-image-"+index}
+                                key={"one-image-"+index}
+                                src={image}
+                                className="max100 other-pictures"/>;
+                                })}
+                    </div>
                 </Modal>
 
             </section>
