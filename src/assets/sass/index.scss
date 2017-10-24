@@ -1,8 +1,8 @@
 // Colors
-$dark-blue : #122435;
-$light-blue : #003669;
-$light-green : #66fcf1;
-$logo-color : #f45255;
+$dark-blue: #122435;
+$light-blue: #003669;
+$light-green: #66fcf1;
+$logo-color: #f45255;
 
 // Sizes
 $presentation-height: 600px;
@@ -43,159 +43,215 @@ $desktop-width: 1024px;
     @content;
   }
 }
-.no-paddings{
-  padding:0 !important;
-  margin:0 !important;
-}
-.paddings{
-  padding:12px;
-}
-.padding-bottom{
-  padding-bottom:20px;
-}
-.align-right{
-  text-align: right;
-}
-hr{
-  padding:0;
-  margin: 0;
-  border:none;
-  border-top:1px solid black;
+
+.no-paddings {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-body{
+.paddings {
+  padding: 12px;
+}
+
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
+.align-right {
+  text-align: right;
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-top: 1px solid black;
+}
+
+body {
   font-family: tablet, Arial;
   font-size: 1.5em;
 }
-section{
-  width:100%;
+
+section {
+  width: 100%;
 }
-section h1.title{
+
+section h1.title {
   padding-bottom: 20px;
 }
-.section-content{
+
+.section-content {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top:60px;
-  padding-bottom:60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
 }
-.text-grey{
+
+.text-grey {
   color: #9e9e9e;
 }
-section#index{
+
+section#index {
 }
-section#presentation{
+
+section#presentation {
   background-color: $dark-blue;
-  height: $presentation-height;
+  min-height: $presentation-height;
   text-align: center;
+  padding-top: 140px;
+  padding-bottom: 140px;
+
+  @include mobile{
+    padding-top: 100px;
+
+  }
 }
-#logo{
-  max-width:$logo-width;
+
+#logo {
+  max-width: $logo-width;
 }
-.parallax-logo{
+
+.parallax-logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.tagline{
+
+.tagline {
   font-family: Times, "Times New Roman", Arial;
   font-style: italic;
   color: white;
   padding: 30px;
   font-size: 1em;
-  height:90px;
+  height: 90px;
 }
-section#who{
-  width:100%;
+
+section#who {
+  width: 100%;
   background-color: $light-green;
   padding-left: 0px;
   padding-right: 0px;
-  padding-top:0px;
-  padding-bottom:0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
-#who h1{
-  font-size:3em;
+.custom-pad-top-bot{
+  padding-top:90px;
+  padding-bottom:90px;
+}
+#who h1 {
+  font-size: 3em;
   text-align: right;
   letter-spacing: -5px;
 
-  @include tablet{
-    font-size:4.5em;
+  @include tablet {
+    font-size: 4.5em;
   }
 
   @include desktop {
-    line-height:110px;
-    font-size:4.5em;
+    line-height: 110px;
+    font-size: 4.5em;
   }
 
 }
-div.section-padding{
+
+div.section-padding {
   padding: 20px;
 }
-h1{
+
+h1 {
   font-family: futura;
-  font-size:2.6em;
-  width:100%;
+  font-size: 2.6em;
+  width: 100%;
   text-align: center;
   letter-spacing: -1px;
 }
-button{
+
+button.action {
+  width: 270px;
+  max-width: 90%;
+}
+
+button {
   border: 2px solid $light-green;
   letter-spacing: 2px;
   color: white;
-  font-size:16px;
+  font-size: 16px;
   padding: 16px;
   margin-top: 10px;
-  font-weight:600;
+  font-weight: 600;
   text-transform: uppercase;
   transition: all .4s;
   -webkit-transition: all .4s;
   background: transparent;
-  outline:none;
+  outline: none;
   font-family: tablet;
 }
-button:hover{
+
+button:hover {
   background-color: $light-green;
   color: black;
   cursor: pointer;
 }
 
-.double-div{
-   padding:20px;
-}
-section#who .double-div-row{
-  padding:0;
-}
-section#what .double-div-row{
-  padding:20px;
-  min-height: $double-div-height;
-}
-.double-div-left, .double-div-right{
-  height:$double-div-height;
-}
-section#motivations{
+button.red-button {
+  border: 2px solid #ea999b;
   background-color: $logo-color;
   color: white;
 }
-section#skills{
+
+button.red-button:hover {
+  border: 2px solid $logo-color;
+  background-color: transparent;
+}
+
+.double-div {
+  padding: 20px;
+}
+
+section#who .double-div-row {
+  padding: 0;
+}
+section#what{
+  padding-top:60px;
+}
+section#what .double-div-row {
+  padding: 20px;
+  min-height: $double-div-height;
+}
+
+.double-div-left, .double-div-right {
+  height: $double-div-height;
+}
+
+section#motivations {
+  background-color: $logo-color;
+  color: white;
+}
+
+section#skills {
   background-color: $light-blue;
   color: white;
 }
-h5.role{
+
+h5.role {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: right;
-  padding-top:12px;
-  padding-bottom:12px;
-}
-p.profile-description{
   padding-top: 12px;
-  padding-bottom:20px;
-  text-align: right;
-  font-size:0.8em;
+  padding-bottom: 12px;
 }
-.profile-description-line{
+
+p.profile-description {
+  padding-top: 12px;
+  padding-bottom: 20px;
+  text-align: right;
+  font-size: 0.8em;
+}
+
+.profile-description-line {
   background: #112437;
   height: 5px;
   margin-top: 1.3rem;
@@ -204,6 +260,7 @@ p.profile-description{
     display: none;
   }
 }
+
 // Quotes
 .quote {
   border-left: 2px solid lightgrey;
@@ -212,19 +269,20 @@ p.profile-description{
     font-size: 2em;
     font-style: italic;
   }
-  span.signature{
+  span.signature {
     text-align: right;
-    font-size:0.7em;
+    font-size: 0.7em;
     display: block;
     font-style: normal;
-    
+
   }
 }
-div.col.picture-container{
-  padding:0;
+
+div.col.picture-container {
+  padding: 0;
 }
 
-.picture{
+.picture {
   background: url($profile-picture-url) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -232,18 +290,75 @@ div.col.picture-container{
   background-size: cover;
 
 }
-img#profile{
-  width:100%;
+
+img#profile {
+  width: 100%;
   margin-bottom: -7px;
 }
-input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly])
-{
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid $light-green;
-  color: black;
+  color: white;
 }
-.input-field .prefix ~ input, .input-field .prefix ~ textarea, .input-field .prefix ~ label, .input-field .prefix ~ .validate ~ label, .input-field .prefix ~ .autocomplete-content{
+
+.input-field .prefix ~ input, .input-field .prefix ~ textarea, .input-field .prefix ~ label, .input-field .prefix ~ .validate ~ label, .input-field .prefix ~ .autocomplete-content {
   color: #000;
 }
-.input-field .prefix.active{
+
+.input-field .prefix.active {
   color: $light-green;
+}
+
+span.icon-container {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+img.linkedin-icon {
+  max-width: 20px;
+}
+
+.or-container {
+  color: white;
+  font-size: 0.8em;
+}
+.or{
+  display: block;
+  font-style: italic;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+.or::before{
+  margin-right:0.75em;
+}
+.or::after {
+  margin-left: .75rem;
+}
+
+.or:before,
+.or:after {
+  content: "";
+  width: 70px;
+  position: relative;
+  display: inline-block;
+  height: 2px;
+  bottom: 3px;
+  background: rgba(255, 255, 255, 0.3);
+
+}
+.red-back{
+  background-color: $logo-color;
+  color: white;
+}
+.dtable{display: table;}
+.dtablecell{
+  display: table-cell;
+  vertical-align: middle;
+}
+.padding-top-mobile{
+  @include mobile{
+    padding-top: 40px;
+  }
 }

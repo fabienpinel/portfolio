@@ -45,7 +45,7 @@ class Skills extends React.Component {
     render() {
 
         return (
-            <section id="skills">
+            <section id="skills" className="wow fadeIn">
                 <Row className="skills-set">
                     <Col s={6} m={3} l={2} offset="l1 m3">
                         <h3>Web</h3>
@@ -63,7 +63,6 @@ class Skills extends React.Component {
                         <ul className="skill-list padding-bottom">
                             <li>Android</li>
                             <li>Cordova</li>
-                            <li></li>
                         </ul>
                     </Col>
                     <Col s={12} m={6} l={3}>
@@ -84,14 +83,14 @@ class Skills extends React.Component {
                                    onClick={() => {
                                        $('#codingDojoModal').modal('open')
                                    }}>
-                                    Coding Dojo organizer (agile programming excercices)
+                                    Coding Dojo organizer (agile programming excercices) [click to show more]
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)"
                                    onClick={() => {
                                        $('#facilitatorModal').modal('open')
-                                   }}>External facilitator for student project
+                                   }}>External facilitator for student project [click to show more]
                                 </a>
                             </li>
                             <li>Startup Weekend organizer (2 years) and participant several times</li>
@@ -104,7 +103,6 @@ class Skills extends React.Component {
                                 </span>
                                 )
                             </li>
-                            <li></li>
                         </ul>
                     </Col>
                 </Row>

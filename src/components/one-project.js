@@ -1,22 +1,22 @@
 import React from 'react';
-import { Modal} from 'react-materialize';
+import {Modal} from 'react-materialize';
 
 require('../assets/sass/one-project.scss');
 
 /**
  * OneProject component
  */
-class OneProject extends React.Component{
+class OneProject extends React.Component {
 
     //noinspection JSAnnotator
     title: string;
 
-    constructor(props){
+    constructor(props) {
         super(props);
     }
 
     render() {
-        return(
+        return (
             <section
                 className="one-project-section"
                 id={this.props.id}>
@@ -27,13 +27,17 @@ class OneProject extends React.Component{
                     trigger={
                         <div className="one-project-div">
                             <div className="project-title-container">
-                                <h1 className="project-title">{this.props.title}</h1>
+                                <div className="project-title">
+                                    <h1 className="wow fadeIn">{this.props.title}</h1>
+                                    <button className="margin-top wow slideInUp hide-mobile">View project</button>
+                                </div>
                             </div>
                             <div className="one-project-image-div">
                                 <img ref='image'
                                      src={this.props.featuredPicture}
                                      className="one-project-image"/>
                             </div>
+                            <button className="show-mobile div100">View project</button>
                         </div>
                     }>
                     <br />
@@ -42,14 +46,33 @@ class OneProject extends React.Component{
                          src={this.props.featuredPicture}
                          className="one-project-image"/>
                     <p className="project-content-text">{this.props.description}</p>
-                    <div>
-                        {this.props.images.map(function(image, index){
+                    <div className="center">
+                        <a href={this.props.website} target="_blanck">
+                            <button className="btn btn-large div100">
+                                Visit Website
+                            </button>
+                        </a>
+                    </div>
+                    <div className="margin-top">
+                        {this.props.images.map(function (image, index) {
                             return <img
-                                id={"one-image-"+index}
-                                key={"one-image-"+index}
+                                id={"one-image-" + index}
+                                key={"one-image-" + index}
                                 src={image}
                                 className="max100 other-pictures"/>;
-                                })}
+                        })}
+                    </div>
+                    <hr />
+                    <div>
+                        <h3>Technologies</h3>
+                        <ul className="techno-list">
+                            {this.props.technologies.map(function (techno, index) {
+                                return <li
+                                    key={"one-techno-" + index}
+                                    className="technology-item"
+                                >{techno}</li>;
+                            })}
+                        </ul>
                     </div>
                 </Modal>
 

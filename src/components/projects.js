@@ -18,27 +18,40 @@ class Projects extends React.Component {
                     title: 'Souliers & Compagnie',
                     featuredPicture: 'src/assets/img/projects/sc.png',
                     images: [],
-                    description: 'Souliers & Compagnie is a shoe retailer company'
+                    description: 'Souliers & Compagnie is a shoe retailer company. ' +
+                    'This website is where they can communicate about their full story. ' +
+                    'It\'s also a place where there are all the information a client would need to enter in contact: ' +
+                    'Map and addresses of all the shops, timetables, phone numbers, facebook pages etc.',
+                    website: 'http://soulierscompagnie.fr',
+                    technologies: ['PHP', 'CSS', 'SQL', 'Parallax scrolling']
                 }, {
                     title: 'Champagne Grand Conclave',
                     featuredPicture: 'src/assets/img/projects/cgc.png',
-                    images: [],
-                    description: 'Explain what is the company, what s the goal of the website, how did I developed and which technologies'
+                    images: ['src/assets/img/projects/cgc-vignettes.png', 'src/assets/img/projects/cgc-edition.png'],
+                    description: 'Champagne Grand Conclave is a Champagne brand. ' +
+                    'They wanted their website to be a showcase which could show the visitor what are the values of the brand and make people feel the spirit they want to share.',
+                    website: 'http://champagnegrandconclave.com',
+                    technologies: ['Angular2', 'Sass']
                 }, {
                     title: 'Technews.fr',
                     featuredPicture: 'src/assets/img/projects/technews.png',
                     images: [],
                     description: 'The best way to make sure you understand something, is to explain it simply. The reason why I created Technews.fr in 2012 was to share my passion for new technologies & innovation while making sure I was up to date with creations of the sector. ' +
                     'My curiosity pushed me to start testing high-tech products and write tutorials in order to make it easier for my readers to use/take on new technologies, removing a cognitive barrier. From flash news, event communications, tutorials and detailed reviews of products, ' +
-                    'Technews.fr allows me to express my love for new technologies in a useful manner. '
+                    'Technews.fr allows me to express my love for new technologies in a useful manner.',
+                    website: 'http://technews.fr',
+                    technologies: ['PHP', 'SQL', 'CSS']
+
                 }, {
                     title: 'Sphero battle',
                     featuredPicture: 'src/assets/img/projects/sphero.jpg',
-                    images: [],
+                    images: ['src/assets/img/projects/sphero-archi.png'],
                     description: 'Sphero Battle is a duelling game. Two players are confronted in a combat with no mercy. Each player controls his/her robot Sphero using a MYO bracelet. The goal is to survive the duel with a maximum of hits. When hit, a player loses a percentage of his life. ' +
                     'The public can vote for players to help give them more power and allow them to surpass their capabilities during a short period of time (the opponent’s movement is slowed down, the commands are reversed, immunity is provided and even bonus life). ' +
                     'Star Wars is virtual, while ours is pretty real. Play Sphero Battle and the force will be with you. ' +
-                    'Project created during a computer science major at Polytech Nice Sophia'
+                    'Project created during a computer science major at Polytech Nice Sophia.',
+                    website: 'https://vimeo.com/155295677',
+                    technologies: ['Cordova', 'Java', 'Native Android', 'Sphero API', 'Myo API']
                 }, {
                     title: 'Jeffrey',
                     featuredPicture: 'src/assets/img/projects/jeffrey/jeffrey6.png',
@@ -46,7 +59,9 @@ class Projects extends React.Component {
                         'src/assets/img/projects/jeffrey/jeffrey3.png',
                         'src/assets/img/projects/jeffrey/jeffrey4.png',
                         'src/assets/img/projects/jeffrey/jeffrey5.png'],
-                    description: 'Jeffrey est un service qui permet de développer et maintenir une audience Instagram ciblée et de qualité. '
+                    description: 'Jeffrey is a service which provides a way to develop and maintain a targeted and quality Instagram audience.',
+                    website: 'http://tryjeffrey.com',
+                    technologies: ['AngularJS']
                 }
             ]
         };
@@ -55,18 +70,15 @@ class Projects extends React.Component {
     render() {
         return (
             <section className="projects-section">
-                <section className="double-div">
+                <section className="double-div wow fadeIn">
                     <Row className="double-div-row">
-                        <Col s={12} m={6} className="double-div-left">
-                            <Row className="paddings">
+                        <Col s={12} m={6} className="double-div-left red-back dtable">
+                            <Row className="paddings dtablecell">
                                 <p>
-                                    What I search in every project is a great relationship with the client.
-                                    I think this is very important in order to work well together and provide each other
-                                    the best we can.
+                                    I value good relationships with clients. It is a good driver for good results, thanks to good communication and mutual understanding .
                                 </p>
                                 <p>
-                                    I love searching for new UX principle and implement great looking UI with easy
-                                    interactions.
+                                    I keep myself up to date with new UX principles, so I'm able to implement great looking UI with easy interactions.
                                 </p>
                             </Row>
                         </Col>
@@ -88,7 +100,9 @@ class Projects extends React.Component {
                                 key={"one-project-" + index}
                                 title={project.title}
                                 description={project.description}
+                                technologies={project.technologies}
                                 featuredPicture={project.featuredPicture}
+                                website={project.website}
                                 images={project.images}
                             />;
                         })}

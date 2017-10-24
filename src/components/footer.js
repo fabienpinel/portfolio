@@ -14,7 +14,7 @@ class Footer extends React.Component {
         this.state = {
             name: '',
             email: '',
-            message:''
+            message: ''
         };
         this.onNameChange = this.onNameChange.bind(this);
         this.onEmailChange = this.onEmailChange.bind(this);
@@ -23,7 +23,7 @@ class Footer extends React.Component {
         this.initState = this.initState.bind(this);
     }
 
-    initState(){
+    initState() {
         this.setState(
             {
                 name: '',
@@ -31,6 +31,14 @@ class Footer extends React.Component {
                 email: ''
 
             });
+    }
+
+    isFormOkay() {
+        return (
+            this.state.name && this.state.name.length > 0
+            && this.state.email && this.state.email.length > 0
+            && this.state.message && this.state.message.length > 0
+        );
     }
 
     onNameChange(e) {
@@ -46,23 +54,26 @@ class Footer extends React.Component {
     }
 
     handleSubmit(event) {
-        console.log('A name was submitted: ', this.state);
         event.preventDefault();
-        var self=this;
-        axios.post('http://fabienpinel.pro/mail.php', this.state)
-            .then(function (response) {
-                Materialize.toast('Mail envoyé !', 2000);
-                self.initState();
-            })
-            .catch(function (error) {
-                Materialize.toast('Erreur lors de l\'envoi du mail', 2000);
-            });
+        if (this.isFormOkay()) {
+            var self = this;
+            axios.post('http://fabienpinel.pro/mail.php', this.state)
+                .then(function (response) {
+                    Materialize.toast('Mail envoyé !', 2000);
+                    self.initState();
+                })
+                .catch(function (error) {
+                    Materialize.toast('Erreur lors de l\'envoi du mail', 2000);
+                });
+        } else {
+            Materialize.toast('Le formulaire n\'est pas valide.', 2000);
+        }
     }
 
     render() {
         return (
             <section id="footer" className="section-content">
-                <h1 className="title">Say hey!</h1>
+                <h1 className="title">Say hello!</h1>
                 <div className="switch">
                     <label>
                         <input type="checkbox" checked disabled="true"/>
@@ -71,33 +82,35 @@ class Footer extends React.Component {
                     </label>
                 </div>
                 <div className="contact-div">
-                    <p className="text-grey">If you want to get in touch with me just send me a <i>hey</i></p>
+                    <p className="text-grey">If you want to get in touch with me just send me a <i>hello</i></p>
                     <form onSubmit={this.handleSubmit}>
                         <Row>
                             <Col s={12} m={6} offset="m3">
                                 <Input s={12} placeholder="Name"
                                        value={this.state.name}
                                        onChange={this.onNameChange}
-                                       validate><Icon>account_circle</Icon></Input>
+                                       validate/>
                             </Col>
                             <Col s={12} m={6} offset="m3">
                                 <Input s={12} type="email" placeholder="Email"
                                        value={this.state.email}
                                        onChange={this.onEmailChange}
-                                       validate><Icon>email</Icon></Input>
+                                       validate/>
                             </Col>
                             <Col s={12} m={6} offset="m3">
-                                <Input s={12} type="textarea" placeholder="Your message" className="white-background"
+                                <Input s={12} type="textarea" placeholder="Your message" className=""
                                        value={this.state.message}
                                        onChange={this.onMessageChange}
-                                       validate><Icon>short_text</Icon></Input>
+                                       validate/>
                             </Col>
-                            <Col s={12} m={6} offset="m3">
-                                <button id="heyButton" onClick={this.submitContactForm} className="">Hey !</button>
+                            <Col s={12} m={6} offset="m3" className="heyContainer">
+                                <button id="heyButton" onClick={this.submitContactForm} className="">Hello!</button>
                             </Col>
                         </Row>
                     </form>
                 </div>
+
+                <hr />
 
             </section>
 

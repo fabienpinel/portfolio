@@ -23,10 +23,9 @@ $light-green : #66fcf1;
 }
 
 section#footer{
-  background-color: black;
+  background-color: #222;
   color: white;
   min-height:300px;
-  padding:20px;
 }
 #footer h1{
 }
@@ -47,17 +46,57 @@ section#footer{
 }
 .contact-div{
   text-align: center;
+  padding-bottom: 40px;
+  
   input, textarea {
     padding-left: 12px;
+    background: black;
+    background-color: black;
+    color: white;
   }
 }
 #heyButton {
-  width: calc(100% - 3rem);
-  margin-left:3rem;
+  margin: 0 .75rem;
+  width: calc(100% - .75rem);
   @include mobile {
     min-width:300px;
   }
 }
 .white-background{
   background-color: white !important;
+}
+
+.switch label{
+  cursor:default;
+}
+.switch{
+  padding: 20px;
+}
+
+hr {
+  border-color: white !important;
+  width:75%;
+  margin:auto !important;
+
+  @include mobile {
+    width:90%;
+  }
+}
+
+.social-icon{
+  border: none;
+  border-radius: 3px;
+  color: #7b7a7a;
+  display: inline-block;
+  font-size: 45px;
+  text-decoration: none;
+  margin: 0;
+  padding: 4% 5%;
+  transition: all 0.3s ease-in-out;
+}
+.social-icon:hover{
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  cursor: pointer;
+  font-size:90%;
 }
