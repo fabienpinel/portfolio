@@ -84,7 +84,7 @@ hr {
 }
 div.icons-footer{
   padding-top: 40px;
-  height: 300px;
+  min-height: 200px;
   text-align: center;
 }
 
@@ -108,9 +108,18 @@ li.social-icon{
   font-size: 50px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+
+  @include mobile {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+  }
 }
 li.social-icon i {
   line-height: 150px;
+  @include mobile {
+    line-height: 100px;
+  }
 }
 li.social-icon:hover{
   background: rgba(187, 187, 187, 0.05);
