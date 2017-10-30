@@ -27674,7 +27674,7 @@
 	                        _react2.default.createElement(
 	                            'h1',
 	                            { className: 'title wow fadeInDown' },
-	                            'My motivations'
+	                            'My motivation'
 	                        ),
 	                        _react2.default.createElement(
 	                            _reactMaterialize.Col,

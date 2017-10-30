@@ -112,6 +112,26 @@ class Footer extends React.Component {
 
                 <hr />
 
+                <div className="icons-footer padding-left-right">
+                    <ul className="social-icons-list">
+                            <a href="https://twitter.com/pinelfabien" target="_blanck">
+                            <li className="social-icon">
+                                <i className="fa fa-twitter" aria-hidden="true"> </i>
+                            </li>
+                            </a>
+                            <a href="https://www.instagram.com/fabien.pinel/" target="_blanck">
+                            <li className="social-icon">
+                                <i className="fa fa-instagram" aria-hidden="true"> </i>
+                            </li>
+                            </a>
+                            <a href="https://www.linkedin.com/in/fabienpinel/" target="_blanck">
+                            <li className="social-icon">
+                                <i className="fa fa-linkedin-square" aria-hidden="true"> </i>
+                            </li>
+                            </a>
+                    </ul>
+                </div>
+
             </section>
 
         );

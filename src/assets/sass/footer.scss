@@ -82,21 +82,41 @@ hr {
     width:90%;
   }
 }
+div.icons-footer{
+  padding-top: 40px;
+  height: 300px;
+  text-align: center;
+}
 
-.social-icon{
+img.icon-footer{
+  width: 30px;
+}
+ul.social-icons-list{
+  display: inline;
+  width: 100%;
+  text-align: center;
+}
+li.social-icon{
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  vertical-align: middle;
   border: none;
   border-radius: 3px;
-  color: #7b7a7a;
+  color: #c9c9c9;
   display: inline-block;
-  font-size: 45px;
+  font-size: 50px;
   text-decoration: none;
-  margin: 0;
-  padding: 4% 5%;
   transition: all 0.3s ease-in-out;
 }
-.social-icon:hover{
-  background: rgba(255,255,255,0.05);
-  color: #fff;
+li.social-icon i {
+  line-height: 150px;
+}
+li.social-icon:hover{
+  background: rgba(187, 187, 187, 0.05);
+  color: white;
   cursor: pointer;
-  font-size:90%;
+}
+.max-100{
+  max-width: 100%;
 }

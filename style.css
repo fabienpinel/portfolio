@@ -185,12 +185,15 @@ ul.techno-list {
   display: inline-block; }
 
 li.technology-item {
-  background: #66fcf1;
+  background: #122435;
+  color: white;
   width: fit-content;
   padding: 5px;
   display: inline;
   margin-left: 10px;
-  line-height: 45px; }
+  line-height: 45px;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .show-mobile {
   display: none; }
