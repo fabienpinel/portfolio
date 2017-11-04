@@ -53,15 +53,7 @@ class OneProject extends React.Component {
                             </button>
                         </a>
                     </div>
-                    <div className="margin-top">
-                        {this.props.images.map(function (image, index) {
-                            return <img
-                                id={"one-image-" + index}
-                                key={"one-image-" + index}
-                                src={image}
-                                className="max100 other-pictures"/>;
-                        })}
-                    </div>
+                    
                     <hr />
                     <div>
                         <h3>Technologies</h3>

@@ -43,7 +43,22 @@ $desktop-width: 1024px;
     @content;
   }
 }
+.modal{
+  top: 5% !important;
+  height: 90% !important;
+  max-height: 90% !important;
+  min-width: 65% !important;
 
+  @include mobile{
+    min-width: 75% !important;
+
+  }
+
+  @include mobile{
+    min-width: 95% !important;
+
+  }
+}
 .no-paddings {
   padding: 0 !important;
   margin: 0 !important;

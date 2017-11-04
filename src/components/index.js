@@ -32,7 +32,7 @@ class Index extends React.Component {
 
     componentDidMount() {
         let options = {
-            strings: ["runner", "developer", "performance addict", "in love with code", "old bike fan"],
+            strings: ["runner", "developer", "performance addict", "in love with code", "vintage bike fan"],
             startDelay: 100,
             showCursor: false,
             typeSpeed: 20,

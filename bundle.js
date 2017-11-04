@@ -57609,7 +57609,54 @@
 	                        )
 	                    )
 	                ),
-	                _react2.default.createElement('hr', null)
+	                _react2.default.createElement('hr', null),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'icons-footer padding-left-right' },
+	                    _react2.default.createElement(
+	                        'ul',
+	                        { className: 'social-icons-list' },
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://twitter.com/pinelfabien', target: '_blanck' },
+	                            _react2.default.createElement(
+	                                'li',
+	                                { className: 'social-icon' },
+	                                _react2.default.createElement(
+	                                    'i',
+	                                    { className: 'fa fa-twitter', 'aria-hidden': 'true' },
+	                                    ' '
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://www.instagram.com/fabien.pinel/', target: '_blanck' },
+	                            _react2.default.createElement(
+	                                'li',
+	                                { className: 'social-icon' },
+	                                _react2.default.createElement(
+	                                    'i',
+	                                    { className: 'fa fa-instagram', 'aria-hidden': 'true' },
+	                                    ' '
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'https://www.linkedin.com/in/fabienpinel/', target: '_blanck' },
+	                            _react2.default.createElement(
+	                                'li',
+	                                { className: 'social-icon' },
+	                                _react2.default.createElement(
+	                                    'i',
+	                                    { className: 'fa fa-linkedin-square', 'aria-hidden': 'true' },
+	                                    ' '
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
 	            );
 	        }
 	    }]);
