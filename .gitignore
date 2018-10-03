@@ -5,3 +5,6 @@ node_modules/
 bundle.js
 style.css
 npm-debug.log
+./bundle.js
+./style.css
+package-lock.json
