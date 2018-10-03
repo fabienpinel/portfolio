@@ -16,6 +16,24 @@ class OneProject extends React.Component {
     }
 
     render() {
+        let imageList = 
+        <div>
+        <hr />
+        <div className="margin-top">
+            <h3>Captures</h3>
+            <div className={'center paddings-top-bottom'}>
+            {this.props.images.map(function (image, index) {
+                return <img
+                    id={"one-project-pitcure" + index}
+                    key={"one-project-picture" + index}
+                    className="image-capture-project"
+                    src={""+image}
+                />;
+            })}
+        </div>
+        </div>
+        </div>;
+
         return (
             <section
                 className="one-project-section"
@@ -55,7 +73,7 @@ class OneProject extends React.Component {
                     </div>
                     
                     <hr />
-                    <div>
+                    <div className="margin-top">
                         <h3>Technologies</h3>
                         <ul className="techno-list">
                             {this.props.technologies.map(function (techno, index) {
@@ -66,6 +84,8 @@ class OneProject extends React.Component {
                             })}
                         </ul>
                     </div>
+
+                    { (this.props.images.length >0) ? imageList : null }
                 </Modal>
 
             </section>

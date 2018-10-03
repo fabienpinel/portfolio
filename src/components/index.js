@@ -19,7 +19,6 @@ require('../assets/sass/index.scss');
 let data = new Data();
 let typed;
 class Index extends React.Component {
-
     constructor() {
         super();
         this.state = {
@@ -93,7 +92,7 @@ class Index extends React.Component {
                                 <div className="section-padding">
                                     <h1 className="wow fadeInUp">{this.state.data.firstname}</h1>
                                     <h1 className="wow fadeInUp">{this.state.data.lastname}</h1>
-                                    <h5 className="role wow fadeInUp">SOFTWARE ENGINEER @AMADEUS <br/> AND FREELANCE DEVELOPER</h5>
+                                    <h5 className="role wow fadeInUp">SOFTWARE ENGINEER @LELIVRESCOLAIRE.FR <br/> AND FREELANCE DEVELOPER</h5>
                                     <div>
                                         <div>
                                             <span className="col m2 profile-description-line wow fadeInUp"></span>

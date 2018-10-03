@@ -73,7 +73,9 @@ $desktop-width: 1024px;
 .one-project-div:hover .project-title-container{
   display: table;
 }
-
+.modal.modal-fixed-footer .modal-content{
+  text-align: center;
+}
 .one-project-image-div{
   width:$one-project-width;
   max-height:$one-project-height;
@@ -85,8 +87,8 @@ $desktop-width: 1024px;
 img.one-project-image{
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-  width:100%;
-  max-width: 100%;
+  
+  max-width: 70%;
   height:auto;
 }
 .project-title-container{
@@ -158,4 +160,8 @@ li.technology-item{
   @include mobile{
     display: none;
   }
+}
+
+.image-capture-project{
+  max-width: 90%
 }

@@ -30,7 +30,7 @@ class Projects extends React.Component {
                     images: ['src/assets/img/projects/cgc-vignettes.png', 'src/assets/img/projects/cgc-edition.png'],
                     description: 'Champagne Grand Conclave is a Champagne brand. ' +
                     'They wanted their website to be a showcase which could show the visitor what are the values of the brand and make people feel the spirit they want to share.',
-                    website: 'http://champagnegrandconclave.com',
+                    website: 'http://champagnegrandconclave.technews.fr',
                     technologies: ['Angular2', 'Sass']
                 }, {
                     title: 'Technews.fr',
@@ -55,10 +55,7 @@ class Projects extends React.Component {
                 }, {
                     title: 'Jeffrey',
                     featuredPicture: 'src/assets/img/projects/jeffrey/jeffrey6.png',
-                    images: ['src/assets/img/projects/jeffrey/jeffrey2.png',
-                        'src/assets/img/projects/jeffrey/jeffrey3.png',
-                        'src/assets/img/projects/jeffrey/jeffrey4.png',
-                        'src/assets/img/projects/jeffrey/jeffrey5.png'],
+                    images: ['src/assets/img/projects/jeffrey/app-tryjeffrey.png'],
                     description: 'Jeffrey is a service which provides a way to develop and maintain a targeted and quality Instagram audience.',
                     website: 'http://tryjeffrey.com',
                     technologies: ['AngularJS']
