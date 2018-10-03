@@ -1,3 +1,5 @@
+<img width="64" alt="favicon" src="https://user-images.githubusercontent.com/1451640/46440395-7f865580-c763-11e8-8ecc-558b2b7ba80a.png">
+
 # Portfolio
 Hi, This is the code of my portfolio !
 ## Technologies
