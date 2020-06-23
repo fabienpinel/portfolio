@@ -50,8 +50,9 @@ class Skills extends React.Component {
                     <Col s={6} m={3} l={2} offset="l1 m3">
                         <h3>Web</h3>
                         <ul className="skill-list padding-bottom">
+                        <li>ReactJS</li>
+                        <li>NextJS</li>
                             <li>Angular4, AngularJS</li>
-                            <li>ReactJS</li>
                             <li>Jquery</li>
                             <li>Sass, Less</li>
                             <li></li>

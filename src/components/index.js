@@ -40,9 +40,9 @@ class Index extends React.Component {
             loop: true
         };
         typed = new Typed("#tagline", options);
-        this.onResize();
         const wow = new WOW();
         wow.init();
+        this.onResize();
     }
 
     componentDidUpdate() {
@@ -92,7 +92,7 @@ class Index extends React.Component {
                                 <div className="section-padding">
                                     <h1 className="wow fadeInUp">{this.state.data.firstname}</h1>
                                     <h1 className="wow fadeInUp">{this.state.data.lastname}</h1>
-                                    <h5 className="role wow fadeInUp">SOFTWARE ENGINEER @LELIVRESCOLAIRE.FR <br/> AND FREELANCE DEVELOPER</h5>
+                                    <h5 className="role wow fadeInUp">CO-FOUNDER @TOKFLUENCE</h5>
                                     <div>
                                         <div>
                                             <span className="col m2 profile-description-line wow fadeInUp"></span>
@@ -100,7 +100,11 @@ class Index extends React.Component {
                                         <div className="wow fadeInUp">
                                             <div className="no-paddings">
                                                 <p className="profile-description">
-                                                    I am a front-end developer specialized in UI and UX development.
+                                                    I am co-founder and CPO of <a 
+                                                    style={{color:'black'}}
+                                                    href='https://tokfluence.com/?ref=fabienpinelpro' 
+                                                    target='_blank'>Tokfluence</a>. An influencer search, audience analysis and campaign management platform.
+                                                    I am specialized in UI and UX development.
                                                     Driven by inspiring projects, I love working for innovative
                                                     solutions with disruptive designs.
                                                     I am 300% passionate about what I do, always trying to push myself
@@ -118,7 +122,7 @@ class Index extends React.Component {
                                 </div>
                             </div>
                         </Col>
-                        <Col s={12} m={6} className="picture-container picture"></Col>
+                        <Col s={12} m={6} className="picture-container picture"> </Col>
                     </Row>
 
                 </section>

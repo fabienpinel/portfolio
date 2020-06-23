@@ -59,6 +59,13 @@ class Projects extends React.Component {
                     description: 'Jeffrey is a service which provides a way to develop and maintain a targeted and quality Instagram audience.',
                     website: 'http://tryjeffrey.com',
                     technologies: ['AngularJS']
+                }, {
+                    title: 'Jeffrey TikTok',
+                    featuredPicture: 'src/assets/img/projects/jeffrey-tiktok.png',
+                    images: ['src/assets/img/projects/jeffrey-tiktok.png'],
+                    description: 'Jeffrey is a service which provides a way to develop and maintain a targeted and quality TikTok audience.',
+                    website: 'http://tiktok.tryjeffrey.com',
+                    technologies: ['ReactJS', 'NextJS', 'Less']
                 }
             ]
         };

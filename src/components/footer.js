@@ -76,7 +76,7 @@ class Footer extends React.Component {
                 <h1 className="title">Say hello!</h1>
                 <div className="switch">
                     <label>
-                        <input type="checkbox" checked disabled="true"/>
+                        <input type="checkbox" disabled={true} />
                         <span className="lever"></span>
                         Available for projects
                     </label>
@@ -104,7 +104,7 @@ class Footer extends React.Component {
                                        validate/>
                             </Col>
                             <Col s={12} m={6} offset="m3" className="heyContainer">
-                                <button id="heyButton" onClick={this.submitContactForm} className="">Hello!</button>
+                                <button id="heyButton" className="">Hello!</button>
                             </Col>
                         </Row>
                     </form>

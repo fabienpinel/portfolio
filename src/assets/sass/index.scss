@@ -234,6 +234,8 @@ section#what{
 section#what .double-div-row {
   padding: 20px;
   min-height: $double-div-height;
+  width: 1200px;
+  max-width: 100%;
 }
 
 .double-div-left, .double-div-right {
@@ -243,6 +245,11 @@ section#what .double-div-row {
 section#motivations {
   background-color: $logo-color;
   color: white;
+
+  .row {
+    width: 1200px;
+    max-width: 100%;
+  }
 }
 
 section#skills {
